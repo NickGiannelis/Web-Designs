@@ -1,12 +1,12 @@
-/* Global Styles */
+
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Κάνει το σώμα να καλύπτει όλο το ύψος της οθόνης */
+    height: 100vh; 
     background: repeating-linear-gradient(90deg, #cccccc 0px, #cccccc 1px, transparent 1px, transparent 50px), 
                 repeating-linear-gradient(0deg, #cccccc 0px, #cccccc 1px, transparent 1px, transparent 50px);
-    background-size: 50px 50px; /* Μέγεθος κάθε τετραγώνου (50px x 50px) */
-    background-position: top left; /* Κεντράρει το μοτίβο */
+    background-size: 50px 50px;
+    background-position: top left; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,9 @@ body {
 
 
 .logo {
-        display: block;  /* Ensure the logo is a block element */
-        margin: 10px auto 0;  /* This will center it horizontally and add space from the top */
-        width: 60%;  /* Adjust logo width as needed */
+        display: block;  
+        margin: 10px auto 0;  
+        width: 60%;  
         border: 3px solid rgb(131, 6, 153);
         padding: 0px;
         text-align: center;
@@ -28,58 +28,56 @@ body {
     margin: 0 auto;
 }
 
-/* Style the headings */
+
 h1 {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Style for each individual project div */
+
 .mouries, .birbas, .perivola {
     display: flex;
-    flex-direction: row; /* Horizontal layout: image on the left, text on the right */
-    margin-bottom: 30px; /* Space between divs */
-    padding-bottom: 30px; /* Extra space inside div for better separation */
-    border-bottom: 1px solid #ddd; /* Optional: adds a bottom border for visual separation */
-}
+    flex-direction: row; 
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd; 
 
-/* Image on the left side */
 .mouries img, .birbas img, .perivola img {
     max-width: 300px;
-    margin-right: 20px; /* Space between the image and text */
+    margin-right: 20px; 
 }
 
 /* Flexbox for text: h2 on top of p */
 .mouries .text, .birbas .text, .perivola .text {
     display: flex;
-    flex-direction: column; /* Stack h2 and p vertically */
-    flex: 1; /* Let the text take the remaining space */
+    flex-direction: column; 
+    flex: 1; 
 }
 
-/* Fade-in effect for paragraphs */
+
 .mouries p, .birbas p, .perivola p {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Fade-in animation */
-    margin-top: 10px; /* Space between h2 and paragraph */
+    animation: fadeIn 2s forwards; 
+    margin-top: 10px;
 }
 
 
-/* Typing effect for each h2 */
+
 .mouries h2 {
     width: 380px;
-    animation: typing-mouries 3s steps(50, end) 1s forwards, blink 0.75s step-end 4s; /* Adjust steps to match character count */
+    animation: typing-mouries 3s steps(50, end) 1s forwards, blink 0.75s step-end 4s; 
 }
 
 .birbas h2 {
     width: 360px;
-    animation: typing-birbas 4s steps(60, end) 1s forwards, blink 0.75s step-end 5s; /* Adjust steps to match character count */
+    animation: typing-birbas 4s steps(60, end) 1s forwards, blink 0.75s step-end 5s; 
 }
 
 .perivola h2 {
     width: 400px;
-    animation: typing-perivola 5s steps(70, end) 1s forwards, blink 0.75s step-end 6s; /* Adjust steps to match character count */
+    animation: typing-perivola 5s steps(70, end) 1s forwards, blink 0.75s step-end 6s; 
 }
-/* Keyframes for fade-in effect */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -90,13 +88,13 @@ h1 {
 }
 
 
-/* Typing animations */
+
 @keyframes typing-mouries {
     from {
         width: 0;
     }
     to {
-        width: 390px; /* Match length of 'Mouries - Traditional Greek Tavern Website' */
+        width: 390px;
     }
 }
 
@@ -105,7 +103,7 @@ h1 {
         width: 0;
     }
     to {
-        width: 405px; /* Match length of 'Birbas - Greek Pastry Shop Website' */
+        width: 405px;
     }
 }
 
@@ -114,7 +112,7 @@ h1 {
         width: 0;
     }
     to {
-        width: 410px; /* Match length of 'Perivola - Traditional Greek Grill House Website' */
+        width: 410px; 
     }
 }
 
@@ -125,13 +123,13 @@ h1 {
     }
 }
 
-/* Hide the cursor after typing */
+
 .mouries h2, .birbas h2, .perivola h2 {
     display: inline-block;
     font-size: 1.5rem;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 4px solid black; /* Typing cursor */
+    border-right: 4px solid black; 
     padding-right: 5px;
 }
 
@@ -148,28 +146,28 @@ h1 {
         width: 100%;
     }
     h2 {
-            display: block; /* Το h2 να συμπεριφέρεται σαν μπλοκ στοιχείο */
-            font-size: 1.2rem; /* Μείωση μεγέθους για κινητά αν χρειάζεται */
-            white-space: normal; /* Επιτρέπει στο κείμενο να κάνει νέα γραμμή */
-            word-wrap: break-word; /* Σπάει λέξεις που είναι πολύ μεγάλες */
-            overflow: visible; /* Εξασφαλίζει ότι δεν κόβεται περιεχόμενο */
-            text-align: left; /* Προαιρετικό: Ευθυγράμμιση αριστερά */
+            display: block;
+            font-size: 1.2rem; 
+            white-space: normal; 
+            word-wrap: break-word; 
+            overflow: visible;
+            text-align: left; 
         
     }
     
     .mouries, .birbas, .perivola {
-        flex-direction: column; /* Αλλάζει τη διάταξη σε κατακόρυφη */
-        align-items: center; /* Κεντράρει τα περιεχόμενα */
-        text-align: center; /* Προσθέτει κεντρική στοίχιση */
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
     }
 
     .mouries img, .birbas img, .perivola img {
-        margin: 0 0 20px 0; /* Αφαιρεί δεξιό περιθώριο και προσθέτει κάτω περιθώριο */
-        max-width: 90%; /* Οι εικόνες να μην ξεπερνούν το 90% του πλάτους της οθόνης */
+        margin: 0 0 20px 0; 
+        max-width: 90%; 
     }
 
     .mouries .text, .birbas .text, .perivola .text {
-        text-align: center; /* Προαιρετικά: μπορείς να αλλάξεις σε left */
+        text-align: center;
         margin: 10px 0;
         max-width: 100%; 
     }
